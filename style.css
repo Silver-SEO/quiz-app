@@ -8,16 +8,134 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: 0;
+  margin: 0 0 45px 0;
   font-family: system-ui, sans-serif;
   background: var(--body-bg);
 }
 
 header {
-  background: gray;
+  background: black;
   text-align: center;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 h1 {
-  font-size: 50px;
+  text-align: center;
+  color: white;
+  line-height: 1.4;
+  margin: 0;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  padding-block: 16px;
+}
+
+h2 {
+  text-align: center;
+}
+
+div {
+  width: 100%;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 7px 0;
+  gap: 10px;
+  width: 80%;
+}
+
+.question-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  background-color: hotpink;
+  padding: 20px 20px 5px 20px;
+  margin: 20px 20px 5px 20px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+Element {
+  color: #fff;
+}
+.question-card__bookmark span.bookmark-button {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvb2ttYXJrIj48cGF0aCBkPSJtMTkgMjEtNy00LTcgNFY1YTIgMiAwIDAgMSAyLTJoMTBhMiAyIDAgMCAxIDIgMnYxNnoiLz48L3N2Zz4=");
+  width: 50px;
+  height: 50px;
+}
+.question-card__bookmark span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px 5px 5px 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.question-card__bookmark {
+  size: 3em;
+  background: fixed;
+  color: black;
+  border: none;
+  position: absolute;
+  font-size: 2em;
+  right: 15px;
+  top: -25px;
+}
+
+.question-card__bookmark a:hover {
+  background-color: mediumorchid;
+}
+
+.button {
+  width: 50%;
+  background-color: darkblue;
+  text-align: center;
+  height: 40px;
+  border-radius: 7px;
+}
+.button a {
+  color: white;
+}
+.button:hover {
+  color: green;
+  background-color: red;
+}
+.button-element {
+  display: flex;
+  text-align: center;
+  margin: 10px;
+}
+
+.tags {
+  align-items: flex-start;
+}
+.tags ul {
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 5px;
+}
+.tags li {
+  background-color: green;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 7px;
+}
+.tags a {
+  color: white;
+}
+.tags a:hover {
+  color: purple;
 }
